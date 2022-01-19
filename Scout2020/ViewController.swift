@@ -21,26 +21,30 @@ class ViewController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var matchNum: UITextField!
     @IBOutlet weak var teamNum: UITextField!
     @IBOutlet weak var scoutName: UITextField!
+    @IBOutlet weak var comments: UITextView!
     
-    @IBOutlet weak var startingHabLevel: GMStepper!
-    @IBOutlet weak var sandstormBonus: GMStepper!
+    @IBOutlet weak var autonLower: GMStepper!
+    @IBOutlet weak var autonUpper: GMStepper!
+    @IBOutlet weak var crossSwitch: UISwitch!
+    @IBOutlet weak var
+    climbAttempt: UISwitch!
+    @IBOutlet weak var
+    climbSuccess: UISwitch!
     
-    @IBOutlet weak var hatchLow: GMStepper!
-    @IBOutlet weak var hatchMedium: GMStepper!
-    @IBOutlet weak var hatchHigh: GMStepper!
-    @IBOutlet weak var hatchSandstormSwitch: UISwitch!
-    
-    @IBOutlet weak var cargoLow: GMStepper!
-    @IBOutlet weak var cargoMedium: GMStepper!
-    @IBOutlet weak var cargoHigh: GMStepper!
-    @IBOutlet weak var cargoSandstormSwitch: UISwitch!
-    
-    @IBOutlet weak var finalHabLevel: GMStepper!
-    @IBOutlet weak var droppedPieces: GMStepper!
+    @IBOutlet weak var teleLower: GMStepper!
+    @IBOutlet weak var teleUpper: GMStepper!
+    @IBOutlet weak var
+    rotateAttempt: UISwitch!
+    @IBOutlet weak var
+      rotateSuccess: UISwitch!
+    @IBOutlet weak var
+        positionAttempt: UISwitch!
+    @IBOutlet weak var
+        positionSuccess: UISwitch!
     
     @IBOutlet weak var disabledSwitch: UISwitch!
-    @IBOutlet weak var foulSwitch: UISwitch!
 
+    
     var myUuid = ""
     var prevData = ""
     
@@ -75,37 +79,82 @@ class ViewController: UIViewController , UITextFieldDelegate{
         let alert = UIAlertController(title: "", message: "Clear form?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
             
-            self.matchNum.text = ""
+            self.matchNum.text = String((self.matchNum.text! as NSString).integerValue + 1)
             self.teamNum.text = ""
+            self.comments.text = ""
+            
+            self.autonLower.value = 0.0
+            self.autonUpper.value = 0.0
 
-            self.startingHabLevel.value = 0.0
-            self.sandstormBonus.value = 0.0
+            self.crossSwitch.isOn = false
             
-            self.hatchLow.value = 0.0
-            self.hatchMedium.value = 0.0
-            self.hatchHigh.value = 0.0
-            self.hatchSandstormSwitch.isOn = false
-            
-            self.cargoLow.value = 0.0
-            self.cargoMedium.value = 0.0
-            self.cargoHigh.value = 0.0
-            self.cargoSandstormSwitch.isOn = false
-            
-            self.finalHabLevel.value = 0.0
-            self.droppedPieces.value = 0.0
+            self.teleLower.value = 0.0
+            self.teleUpper.value = 0.0
 
             self.disabledSwitch.isOn = false
-            self.foulSwitch.isOn = false
             
             self.QRCodeImageView.image = nil
             self.LogoImageView.isHidden = false
+            
+            self.climbSuccess.isOn = false
+            self.climbAttempt.isOn = false
+            
+            self.rotateSuccess.isOn = false
+            self.rotateAttempt.isOn = false
+            
+            self.positionSuccess.isOn = false
+            self.positionAttempt.isOn = false
+            // score calc form hide
+            
             
         }))
         alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
         self.present(alert, animated: true)
     }
     
+    //If attempt is turned off, so is success
+    @IBAction func climbAttemptOff(_ sender: Any) {
+        if(climbAttempt.isOn == false){
+            self.climbSuccess.isOn = false
+        }
+    }
+    
+    @IBAction func rotateAttemptOff(_ sender: Any) {
+        if(rotateAttempt.isOn == false){
+            self.rotateSuccess.isOn = false
+        }
+    }
+    
+    @IBAction func positionAttemptOff(_ sender: Any) {
+        if(positionAttempt.isOn == false){
+            self.positionSuccess.isOn = false
+        }
+    }
+    
+    //If success is turned on, so is attempt
+    @IBAction func climbSuccessOn(_ sender: Any) {
+        if(climbSuccess.isOn == true){
+            self.climbAttempt.isOn = true
+        }
+       }
+  
+    @IBAction func rotateSuccessOn(_ sender: Any) {
+        if(rotateSuccess.isOn == true){
+            self.rotateAttempt.isOn = true
+        }
+         }
+    
+    @IBAction func positionSuccessOn(_ sender: Any) {
+        if(positionSuccess.isOn == true){
+            self.positionAttempt.isOn = true
+        }
+         }
+    
     @IBAction func createCode(_ sender: Any) {
+        
+        self.matchNum.endEditing(true)
+        self.teamNum.endEditing(true)
+        self.comments.endEditing(true)
         
         // create image filter
         var filter:CIFilter!
@@ -131,23 +180,32 @@ class ViewController: UIViewController , UITextFieldDelegate{
         let newDate = dateFormatter.string(from: Date())
         
         // set variables
+        let autonLowerVal = autonLower.value
+        let autonUpperVal = autonUpper.value
+       
+        let teleLowerVal = teleLower.value
+        let teleUpperVal = teleUpper.value
         
-        let startinghabVal = startingHabLevel.value
-        let sandstormbonusVal = sandstormBonus.value
         
-        let hatchlowVal = hatchLow.value
-        let hatchmediumVal = hatchMedium.value
-        let hatchhighVal = hatchHigh.value
-
-        let cargolowVal = cargoLow.value
-        let cargomediumVal = cargoMedium.value
-        let cargohighVal = cargoHigh.value
-
-        let droppedpiecesVal = droppedPieces.value
+        var commentText = comments?.text ?? ""
+        commentText = commentText.replacingOccurrences(of: "\"", with: "\\\"")
+        commentText = commentText.replacingOccurrences(of: ",", with: "&#44;")
+        commentText = commentText.replacingOccurrences(of: "'|’", with: "&#39;", options: .regularExpression)
         
-        let finalhabVal = finalHabLevel.value
+        let okayChars = Set("abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLKMNOPQRSTUVWXYZ1234567890+=-?().!_;&#")
+        commentText = commentText.filter {okayChars.contains($0) }
+    
+        var matchText = matchNum?.text ?? ""
+        matchText = matchText.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        var myData = "\(teamNum.text!),\(matchNum.text!),\(String(format: "%.0f", startinghabVal)),\(String(format:"%.0f", sandstormbonusVal)),\(String(format: "%.0f", hatchlowVal)),\(String(format: "%.0f", hatchmediumVal)),\(String(format: "%.0f", hatchhighVal)),\(hatchSandstormSwitch.isOn),\(String(format: "%.0f", cargolowVal)),\(String(format: "%.0f", cargomediumVal)),\(String(format: "%.0f", cargohighVal)),\(cargoSandstormSwitch.isOn),\(String(format: "%.0f", finalhabVal)),\(String(format: "%.0f", droppedpiecesVal)),\(disabledSwitch.isOn),\(foulSwitch.isOn),\(scoutName.text!),\(newDate)"
+        var teamText = teamNum?.text ?? ""
+        teamText = teamText.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        var scoutText = scoutName?.text ?? ""
+        scoutText = scoutText.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        
+        var myData = "\(teamText),\(matchText),\(String(format: "%.0f", autonLowerVal)),\(String(format: "%.0f", autonUpperVal)),\(String(format: "%.0f", teleLowerVal)),\(String(format: "%.0f", teleUpperVal)),\(crossSwitch.isOn),\(climbAttempt.isOn),\(climbSuccess.isOn),\(rotateAttempt.isOn),\(rotateSuccess.isOn),\(positionAttempt.isOn),\(positionSuccess.isOn),\(disabledSwitch.isOn),\(scoutText),\( "'" + commentText + "'"),\(newDate)"
         
         
         // change uuid if data changed and append uuid
@@ -159,16 +217,17 @@ class ViewController: UIViewController , UITextFieldDelegate{
             myData = myData + "," + myUuid
         }
         
-        
+       
         // create qr code image
         let image = generateQRCode(from: String(describing: myData))
         
         // set view image to qr code and hide logo
         self.LogoImageView.isHidden = true
+        // show "showscore" viewcontroller
         QRCodeImageView.image = image
         print(String(describing: myData))
     }
-
+    
 
 }
 

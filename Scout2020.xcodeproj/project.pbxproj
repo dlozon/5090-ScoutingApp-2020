@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,43 +12,18 @@
 		A45AB75D20388D9B00656993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45AB75C20388D9B00656993 /* ViewController.swift */; };
 		A45AB76220388D9B00656993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45AB76120388D9B00656993 /* Assets.xcassets */; };
 		A45AB76520388D9B00656993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A45AB76320388D9B00656993 /* LaunchScreen.storyboard */; };
-		A45AB77020388D9B00656993 /* Scout2019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45AB76F20388D9B00656993 /* Scout2019Tests.swift */; };
-		A45AB77B20388D9B00656993 /* Scout2019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45AB77A20388D9B00656993 /* Scout2019UITests.swift */; };
 		A45AB78F203890FE00656993 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45AB78E203890FE00656993 /* GMStepper.swift */; };
 		A45AB791203894D200656993 /* AppIcons in Resources */ = {isa = PBXBuildFile; fileRef = A45AB790203894D200656993 /* AppIcons */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A45AB76C20388D9B00656993 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A45AB74F20388D9B00656993 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A45AB75620388D9B00656993;
-			remoteInfo = Scout2018;
-		};
-		A45AB77720388D9B00656993 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A45AB74F20388D9B00656993 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A45AB75620388D9B00656993;
-			remoteInfo = Scout2018;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		A41B156A20489D6200897461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A45AB75720388D9B00656993 /* Scout2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scout2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A45AB75720388D9B00656993 /* 2020 Scout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "2020 Scout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45AB75A20388D9B00656993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A45AB75C20388D9B00656993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A45AB76120388D9B00656993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A45AB76420388D9B00656993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A45AB76620388D9B00656993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A45AB76B20388D9B00656993 /* Scout2019Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Scout2019Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A45AB76F20388D9B00656993 /* Scout2019Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scout2019Tests.swift; sourceTree = "<group>"; };
-		A45AB77120388D9B00656993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A45AB77620388D9B00656993 /* Scout2019UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Scout2019UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A45AB77A20388D9B00656993 /* Scout2019UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scout2019UITests.swift; sourceTree = "<group>"; };
-		A45AB77C20388D9B00656993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45AB78E203890FE00656993 /* GMStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GMStepper.swift; path = "GMStepper-master/GMStepper/GMStepper.swift"; sourceTree = SOURCE_ROOT; };
 		A45AB790203894D200656993 /* AppIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,29 +36,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A45AB76820388D9B00656993 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A45AB77320388D9B00656993 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A45AB74E20388D9B00656993 = {
 			isa = PBXGroup;
 			children = (
-				A45AB75920388D9B00656993 /* Scout2019 */,
-				A45AB76E20388D9B00656993 /* Scout2019Tests */,
-				A45AB77920388D9B00656993 /* Scout2019UITests */,
+				A45AB75920388D9B00656993 /* Scout2020 */,
 				A45AB75820388D9B00656993 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,14 +50,12 @@
 		A45AB75820388D9B00656993 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A45AB75720388D9B00656993 /* Scout2019.app */,
-				A45AB76B20388D9B00656993 /* Scout2019Tests.xctest */,
-				A45AB77620388D9B00656993 /* Scout2019UITests.xctest */,
+				A45AB75720388D9B00656993 /* 2020 Scout.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A45AB75920388D9B00656993 /* Scout2019 */ = {
+		A45AB75920388D9B00656993 /* Scout2020 */ = {
 			isa = PBXGroup;
 			children = (
 				A45AB75A20388D9B00656993 /* AppDelegate.swift */,
@@ -110,33 +67,15 @@
 				A45AB76320388D9B00656993 /* LaunchScreen.storyboard */,
 				A45AB76620388D9B00656993 /* Info.plist */,
 			);
-			path = Scout2019;
-			sourceTree = "<group>";
-		};
-		A45AB76E20388D9B00656993 /* Scout2019Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A45AB76F20388D9B00656993 /* Scout2019Tests.swift */,
-				A45AB77120388D9B00656993 /* Info.plist */,
-			);
-			path = Scout2019Tests;
-			sourceTree = "<group>";
-		};
-		A45AB77920388D9B00656993 /* Scout2019UITests */ = {
-			isa = PBXGroup;
-			children = (
-				A45AB77A20388D9B00656993 /* Scout2019UITests.swift */,
-				A45AB77C20388D9B00656993 /* Info.plist */,
-			);
-			path = Scout2019UITests;
+			path = Scout2020;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A45AB75620388D9B00656993 /* Scout2019 */ = {
+		A45AB75620388D9B00656993 /* Scout2020 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A45AB77F20388D9B00656993 /* Build configuration list for PBXNativeTarget "Scout2019" */;
+			buildConfigurationList = A45AB77F20388D9B00656993 /* Build configuration list for PBXNativeTarget "Scout2020" */;
 			buildPhases = (
 				A45AB75320388D9B00656993 /* Sources */,
 				A45AB75420388D9B00656993 /* Frameworks */,
@@ -146,46 +85,10 @@
 			);
 			dependencies = (
 			);
-			name = Scout2019;
+			name = Scout2020;
 			productName = Scout2018;
-			productReference = A45AB75720388D9B00656993 /* Scout2019.app */;
+			productReference = A45AB75720388D9B00656993 /* 2020 Scout.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A45AB76A20388D9B00656993 /* Scout2019Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A45AB78220388D9B00656993 /* Build configuration list for PBXNativeTarget "Scout2019Tests" */;
-			buildPhases = (
-				A45AB76720388D9B00656993 /* Sources */,
-				A45AB76820388D9B00656993 /* Frameworks */,
-				A45AB76920388D9B00656993 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A45AB76D20388D9B00656993 /* PBXTargetDependency */,
-			);
-			name = Scout2019Tests;
-			productName = Scout2018Tests;
-			productReference = A45AB76B20388D9B00656993 /* Scout2019Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A45AB77520388D9B00656993 /* Scout2019UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A45AB78520388D9B00656993 /* Build configuration list for PBXNativeTarget "Scout2019UITests" */;
-			buildPhases = (
-				A45AB77220388D9B00656993 /* Sources */,
-				A45AB77320388D9B00656993 /* Frameworks */,
-				A45AB77420388D9B00656993 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A45AB77820388D9B00656993 /* PBXTargetDependency */,
-			);
-			name = Scout2019UITests;
-			productName = Scout2018UITests;
-			productReference = A45AB77620388D9B00656993 /* Scout2019UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -194,27 +97,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Luc Smith";
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Dylan Lozon";
 				TargetAttributes = {
 					A45AB75620388D9B00656993 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					A45AB76A20388D9B00656993 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A45AB75620388D9B00656993;
-					};
-					A45AB77520388D9B00656993 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = A45AB75620388D9B00656993;
-					};
 				};
 			};
-			buildConfigurationList = A45AB75220388D9B00656993 /* Build configuration list for PBXProject "Scout2019" */;
-			compatibilityVersion = "Xcode 8.0";
+			buildConfigurationList = A45AB75220388D9B00656993 /* Build configuration list for PBXProject "Scout2020" */;
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -226,9 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A45AB75620388D9B00656993 /* Scout2019 */,
-				A45AB76A20388D9B00656993 /* Scout2019Tests */,
-				A45AB77520388D9B00656993 /* Scout2019UITests */,
+				A45AB75620388D9B00656993 /* Scout2020 */,
 			);
 		};
 /* End PBXProject section */
@@ -245,20 +136,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A45AB76920388D9B00656993 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A45AB77420388D9B00656993 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,36 +149,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A45AB76720388D9B00656993 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A45AB77020388D9B00656993 /* Scout2019Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A45AB77220388D9B00656993 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A45AB77B20388D9B00656993 /* Scout2019UITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A45AB76D20388D9B00656993 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A45AB75620388D9B00656993 /* Scout2019 */;
-			targetProxy = A45AB76C20388D9B00656993 /* PBXContainerItemProxy */;
-		};
-		A45AB77820388D9B00656993 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A45AB75620388D9B00656993 /* Scout2019 */;
-			targetProxy = A45AB77720388D9B00656993 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A41B156920489D6200897461 /* Main.storyboard */ = {
@@ -337,6 +185,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -344,6 +193,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -394,6 +244,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -401,6 +252,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -425,7 +277,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -437,12 +290,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56485J6T76;
-				INFOPLIST_FILE = "$(SRCROOT)/Scout2019/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.frc5090.scouting2019-test1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				DEVELOPMENT_TEAM = QFRULW999G;
+				INFOPLIST_FILE = "$(SRCROOT)/Scout2020/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frc5090.scouting2020;
+				PRODUCT_NAME = "2020 Scout";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -456,88 +312,25 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56485J6T76;
-				INFOPLIST_FILE = "$(SRCROOT)/Scout2019/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.frc5090.scouting2019-test1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				DEVELOPMENT_TEAM = QFRULW999G;
+				INFOPLIST_FILE = "$(SRCROOT)/Scout2020/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frc5090.scouting2020;
+				PRODUCT_NAME = "2020 Scout";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
-		A45AB78320388D9B00656993 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56485J6T76;
-				INFOPLIST_FILE = Scout2018Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LucSmith.Scout2018Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scout2019.app/Scout2019";
-			};
-			name = Debug;
-		};
-		A45AB78420388D9B00656993 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56485J6T76;
-				INFOPLIST_FILE = Scout2018Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LucSmith.Scout2018Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scout2019.app/Scout2019";
-			};
-			name = Release;
-		};
-		A45AB78620388D9B00656993 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Z3848PUNK;
-				INFOPLIST_FILE = Scout2018UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LucSmith.Scout2018UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Scout2018;
-			};
-			name = Debug;
-		};
-		A45AB78720388D9B00656993 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7Z3848PUNK;
-				INFOPLIST_FILE = Scout2018UITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LucSmith.Scout2018UITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Scout2018;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A45AB75220388D9B00656993 /* Build configuration list for PBXProject "Scout2019" */ = {
+		A45AB75220388D9B00656993 /* Build configuration list for PBXProject "Scout2020" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A45AB77D20388D9B00656993 /* Debug */,
@@ -546,29 +339,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A45AB77F20388D9B00656993 /* Build configuration list for PBXNativeTarget "Scout2019" */ = {
+		A45AB77F20388D9B00656993 /* Build configuration list for PBXNativeTarget "Scout2020" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A45AB78020388D9B00656993 /* Debug */,
 				A45AB78120388D9B00656993 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A45AB78220388D9B00656993 /* Build configuration list for PBXNativeTarget "Scout2019Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A45AB78320388D9B00656993 /* Debug */,
-				A45AB78420388D9B00656993 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A45AB78520388D9B00656993 /* Build configuration list for PBXNativeTarget "Scout2019UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A45AB78620388D9B00656993 /* Debug */,
-				A45AB78720388D9B00656993 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

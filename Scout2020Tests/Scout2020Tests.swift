@@ -1,15 +1,12 @@
 //
-//  Scout2018Tests.swift
-//  Scout2018Tests
-//
-//  Created by Luc Smith on 2/17/18.
-//  Copyright © 2018 Luc Smith. All rights reserved.
+//  Scout2020Tests.swift
+//  Scout2020Tests
 //
 
 import XCTest
-@testable import Scout2019
+@testable import Scout2020
 
-class Scout2018Tests: XCTestCase {
+class Scout2020Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()
